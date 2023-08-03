@@ -30,3 +30,8 @@ def signup(request):
     return render(request, 'core/signup.html', {
         'form': form
     })
+
+
+def logout(request):
+    logout(request)
+    return redirect('index')
